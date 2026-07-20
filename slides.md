@@ -84,7 +84,7 @@ color: dark
 </div>
 
 <div style="margin-bottom: 10px;">
-    <div style="width: 100%; display: flex; align-items: center-top;">
+    <div style="width: 100%; display: flex; column-gap: 50px; align-items: center-top;">
         <div style="flex: 3;">
             <h2 style="font-size: 2.5rem;">WHY?</h2>
             <h2>運作模式是在理解恩尼格碼結構與運作模式後，利用機器快速運算出所有可能性</h2>
@@ -122,7 +122,28 @@ color: dark
 
 ::title::
 <h1 style="font-size: 3rem; padding-top: 10px; padding-bottom: 10px; font-weight: bold; display: flex; justify-content: space-between;">
-   <span>模仿遊戲與圖靈測試 (Ⅰ)</span><span style="font-size: 2rem; color: gray;">電腦智慧最初的定義</span>
+   <span>AI 的發展過程</span>
+</h1>
+
+::content::
+<div class="relative w-full h-[460px]">
+    <div v-click.hide="1" class="absolute inset-0">
+        <AITimeLine :activeIndex="1" />
+    </div>
+    <div v-click="1" class="absolute inset-0">
+        <AITimeLine :activeIndex="2" />
+    </div>
+</div>
+
+---
+transition: slide-left
+layout: top-title
+color: dark
+---
+
+::title::
+<h1 style="font-size: 3rem; padding-top: 10px; padding-bottom: 10px; font-weight: bold; display: flex; justify-content: space-between;">
+   <span>模仿遊戲與圖靈測試 (Ⅰ)</span><span style="font-size: 2rem; color: gray;">人工智慧最初的評估行為標準</span>
 </h1>
 
 ::content::
@@ -130,10 +151,10 @@ color: dark
     <div style="width: 100%; display: flex; align-items: center-top;">
         <div style="flex: 3;">
             <h2 style="line-height: 1.2;">
-                圖靈在利用 Bombe 協助盟軍獲得勝利後，持續於電腦領域研究，並於 1950 年，發表了一篇名為《Computing Machinery and Intelligence》(計算機器與智慧) 的論文，提出了「模仿遊戲 (Imitation Game)」的概念。
+                圖靈在利用 Bombe 協助盟軍獲得勝利後，持續於電腦領域研究，並於 1950 年，發表了一篇名為<span style="background:#FFE45E; color:black;">《Computing Machinery and Intelligence》(計算機器與智慧)</span> 的論文，提出了「<span style="background:#FFE45E; color:black;">模仿遊戲 (Imitation Game)</span>」的概念。
             </h2>
             <br>
-            <h2 style="font-size: 2.5rem; line-height: 1.5;">模仿遊戲 (Imitation Game)</h2>
+            <h2 style="font-size: 2.5rem; line-height: 1.5;">模仿遊戲 </h2>
             <h2 style="line-height: 1.2;">
                 男性 A 及女性 B，與審問者 C 進行書面的溝通，A 需要使 C 做出錯誤的判斷，而 C 必須在互不相見的情況下，以書面訊息與兩者進行相同的提問，並從回覆中，正確判斷 A 與 B 的性別。 
             </h2>
@@ -158,22 +179,138 @@ color: dark
 
 ::content::
 <div style="margin-bottom: 10px;">
-    <div style="width: 100%; display: flex; align-items: center-top;">
-        <div style="flex: 3;">
-            <h2 style="line-height: 1.2;">模仿遊戲後續延伸出的概念被後人稱為圖靈測試， A 由電腦取代，B 則只限人類，C 一樣需要以書面訊息進行提問，並判斷 A 與 B 誰是電腦，誰是人類。</h2>
+    <div style="width: 100%; display: flex; align-items: flex-start; box-sizing: border-box;">
+        <div style="width: 75%; padding-right: 20px; box-sizing: border-box;">
+            <h2 style="line-height: 1.2; margin-top: 0;">模仿遊戲後續延伸出的概念被後人稱為<span style="background:#FFE45E; color:black;">圖靈測試</span>， A 由電腦取代，B 則只限人類，C 一樣需要以書面訊息進行提問，並判斷 A 與 B 誰是電腦，誰是人類，若<span style="background:#FFE45E; color:black;"> C 判斷錯誤率超過 30% 則 A 通過圖靈測試</span>。</h2>
             <h2 style="line-height: 1.2;">
-                圖靈測試被認為是人工智慧的最初定義，並且至今仍被廣泛使用於人工智慧的研究與發展中。 
+                圖靈測試被認為是<span style="background:#FFE45E; color:black;">人工智慧最初的評估行為標準</span>。 
             </h2>
-            <div v-click=1 style="flex-grow: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; margin-top: 15px;">
-                <p style="margin: 0 0 10px 0; text-align: center;">延伸閱讀 電影《模仿遊戲》(The Imitation Game)：</p>
-                <div style="width: 100%; max-width: 560px; aspect-ratio: 16 / 9;">
-                    <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/spkUZQt_4pI?si=35gLPq1GhqTwy4yi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div v-click=1 style="display: flex; flex-direction: column; margin-top: 15px;">
+                <p style="width: 80%; margin: 0 auto 10px auto; text-align: left; box-sizing: border-box;">延伸閱讀 電影《模仿遊戲》(The Imitation Game, 2014) 預告：</p>
+                <div style="width: 100%; max-width: 560px; aspect-ratio: 16 / 9; display: flex; justify-content: center; margin: 0 auto;">
+                    <iframe style="width: 75%; height: 75%;" src="https://www.youtube.com/embed/spkUZQt_4pI?si=35gLPq1GhqTwy4yi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
-        <div style="flex: 1; text-align: center;">
-            圖靈測試進行方式圖解
-            <a href="https://commons.wikimedia.org/wiki/File:Turing_Test_Version_3.svg#/media/File:Turing_Test_Version_3.svg"><img style="background-color: #FFFFFF; width:auto; height: auto;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Turing_Test_Version_3.svg/1280px-Turing_Test_Version_3.svg.png" alt="Turing Test Version 3.svg"></a><br>By <a href="//commons.wikimedia.org/wiki/User:Hferee" title="User:Hferee">Hugo Férée</a> - <span class="int-own-work" lang="zh-tw">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=17059503">Link</a>
+        <div style="width: 25%; display: flex; flex-direction: column; align-items: center; text-align: center; box-sizing: border-box;">
+            <div style="margin-bottom: 5px;">圖靈測試進行方式圖解</div>
+            <a href="https://commons.wikimedia.org/wiki/File:Turing_Test_Version_3.svg#/media/File:Turing_Test_Version_3.svg" style="display: block; width: 100%;">
+                <img style="background-color: #FFFFFF; width: 100%; height: auto;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Turing_Test_Version_3.svg/1280px-Turing_Test_Version_3.svg.png" alt="Turing Test Version 3.svg">
+            </a><br>
+            <span style="font-size: 12px; color: #666; margin-top: 5px;">
+                By Hugo Férée - Own work, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>
+            </span>
         </div>
     </div>
 </div>
+
+---
+transition: slide-left
+layout: top-title
+color: dark
+---
+
+::title::
+<h1 style="font-size: 3rem; padding-top: 10px; padding-bottom: 10px; font-weight: bold; display: flex; justify-content: space-between;">
+   <span>AI 的發展過程</span>
+</h1>
+
+::content::
+<AITimeLine :activeIndex="3" />
+
+---
+transition: slide-left
+layout: top-title
+color: dark
+---
+
+::title::
+<h1 style="font-size: 3rem; padding-top: 10px; padding-bottom: 10px; font-weight: bold; display: flex; justify-content: space-between;">
+   <span>達特茅斯會議</span><span style="font-size: 2rem; color: gray;">人工智慧的起源</span>
+</h1>
+
+::content::
+<div style="width: 100%; display: flex; align-items: flex-start; box-sizing: border-box;">
+    <div style="width: 66%; padding-right: 20px; box-sizing: border-box;">
+        <h2>
+            達特茅斯夏季人工智慧研究計劃 (Dartmouth Summer Research Project on Artificial Intelligence)，<span style="background:#FFE45E; color:black;">約翰·麥卡錫 (John McCarthy)</span> 等人，正式提出「人工智慧」(Artificial Intelligence, AI) 的概念，並定義<span style="background:#FFE45E; color:black;">人工智慧為「電腦系統執行通常與人類智慧相關任務的能力」</span>。
+        </h2>
+        <br>
+        <Admonition title="Note" width="100%" v-click=1  icon="pixel:notebook" color=cyan-light>
+            <h2 style="font-size: 2rem;">經常被忽略的人工智慧之父</h2>
+        </Admonition>
+    </div>
+    <div style="width: 33%; align-items: center; text-align: center; box-sizing: border-box;">
+        約翰·麥卡錫<br>(John McCarthy, 1927－2011)<br>
+        <a href="https://commons.wikimedia.org/wiki/File:John_McCarthy_Stanford.jpg#/media/File:John_McCarthy_Stanford.jpg">
+            <img style="width: 100%; height: auto; max-width: 300px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/John_McCarthy_Stanford.jpg/1280px-John_McCarthy_Stanford.jpg" alt="File:John McCarthy Stanford.jpg">
+        </a>
+        <span style="font-size: 12px; color: #666;">
+            By <a rel="nofollow" class="external text" href="https://www.flickr.com/photos/null0/">"null0"</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0">CC BY-SA 2.0</a>
+        </span>
+    </div>
+</div>
+
+---
+transition: slide-left
+layout: top-title
+color: dark
+---
+
+::title::
+<h1 style="font-size: 3rem; padding-top: 10px; padding-bottom: 10px; font-weight: bold; display: flex; justify-content: space-between;">
+   <span>AI 的發展過程</span>
+</h1>
+
+::content::
+<AITimeLine :activeIndex="5" />
+
+---
+transition: slide-left
+layout: top-title
+color: dark
+---
+
+::title::
+<h1 style="font-size: 3rem; padding-top: 10px; padding-bottom: 10px; font-weight: bold; display: flex; justify-content: space-between;">
+   <span>AI 發展過程中遇到的質疑</span><span style="font-size: 2rem; color: gray;">中文房間實驗</span>
+</h1>
+
+::content::
+<div style="width: 100%; display: flex; align-items: flex-start; box-sizing: border-box;">
+    <div style="width: 66%; padding-right: 20px; display: flex; flex-direction: column; align-items: center; box-sizing: border-box;">
+        <h2 style="width: 100%; text-align: left; margin-bottom: 10px;">
+            1980 年，哲學家<span style="background:#FFE45E; color:black;">約翰·希爾勒 (John Searle)</span> 提出<span style="background:#FFE45E; color:black;">「中文房間實驗」(Chinese Room Argument)</span>，認為人工智慧只能模擬人類的語言理解能力，並不能真正理解語言的意義。
+        </h2>
+        <a href="https://www.youtube.com/watch?v=oaOG1xOk7XY&t=107s" target="_blank" style="display: block; width: 75%; text-align: center;">
+            <img src="https://preview.redd.it/fun-fact-the-chinese-room-is-a-famous-artificial-v0-hqrg8ha6bw6g1.png?width=1365&format=png&auto=webp&s=11f120b955fd1936622d8bac5a195d27ca87e190" style="width: 100%; height: auto; margin-top: 10px; margin-bottom: 10px;">
+        </a>
+        <span style="font-size: 12px; color: #666; text-align: center;">
+            THE AMAZING DIGITAL CIRCUS - Ep 7: Beach Episode <a href="https://www.youtube.com/watch?v=oaOG1xOk7XY&t=107s" target="_blank">Link</a>
+        </span>
+    </div>
+    <div style="width: 34%; display: flex; flex-direction: column; align-items: center; text-align: center; box-sizing: border-box;">
+        <div>約翰·希爾勒</div>
+        <div style="margin-bottom: 10px;">(John Searle, 1932 － 2025)</div>
+        <a href="https://commons.wikimedia.org/wiki/File:John_searle2.jpg#/media/File:John_searle2.jpg" style="display: block; width: 80%; max-width: 300px;">
+            <img style="width: 100%; height: auto;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/John_searle2.jpg/1280px-John_searle2.jpg" alt="File:John searle2.jpg">
+        </a>
+        <span style="font-size: 12px; color: #666; margin-top: 5px;">
+            By Matthew Breindel - CC BY-SA 3.0, <a href="https://commons.wikimedia.org/w/index.php?curid=1974017" target="_blank">Link</a>
+        </span>
+    </div>
+</div>
+
+---
+transition: slide-left
+layout: top-title
+color: dark
+---
+
+::title::
+<h1 style="font-size: 3rem; padding-top: 10px; padding-bottom: 10px; font-weight: bold; display: flex; justify-content: space-between;">
+   <span>AI 發展過程中遇到的質疑</span><span style="font-size: 2rem; color: gray;">ANI, AGI and ASI</span>
+</h1>
+
+::content::
+next time
