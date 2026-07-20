@@ -122,8 +122,58 @@ color: dark
 
 ::title::
 <h1 style="font-size: 3rem; padding-top: 10px; padding-bottom: 10px; font-weight: bold; display: flex; justify-content: space-between;">
-   模仿遊戲與圖靈測試
+   <span>模仿遊戲與圖靈測試 (Ⅰ)</span><span style="font-size: 2rem; color: gray;">電腦智慧最初的定義</span>
 </h1>
 
 ::content::
-https://en.wikipedia.org/wiki/Turing_test#Versions
+<div style="margin-bottom: 10px;">
+    <div style="width: 100%; display: flex; align-items: center-top;">
+        <div style="flex: 3;">
+            <h2 style="line-height: 1.2;">
+                圖靈在利用 Bombe 協助盟軍獲得勝利後，持續於電腦領域研究，並於 1950 年，發表了一篇名為《Computing Machinery and Intelligence》(計算機器與智慧) 的論文，提出了「模仿遊戲 (Imitation Game)」的概念。
+            </h2>
+            <br>
+            <h2 style="font-size: 2.5rem; line-height: 1.5;">模仿遊戲 (Imitation Game)</h2>
+            <h2 style="line-height: 1.2;">
+                男性 A 及女性 B，與審問者 C 進行書面的溝通，A 需要使 C 做出錯誤的判斷，而 C 必須在互不相見的情況下，以書面訊息與兩者進行相同的提問，並從回覆中，正確判斷 A 與 B 的性別。 
+            </h2>
+        </div>
+        <div style="flex: 1; text-align: center;">
+            模仿遊戲進行方式圖解
+            <a href="https://commons.wikimedia.org/wiki/File:The_Imitation_Game.svg#/media/File:The_Imitation_Game.svg"><img style="background-color: #FFFFFF; width:auto; height: auto;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/The_Imitation_Game.svg/1280px-The_Imitation_Game.svg.png" alt="File:The Imitation Game.svg"></a><br>By <a href="//commons.wikimedia.org/wiki/User:Hferee" title="User:Hferee">Hugo Férée</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=17059778">Link</a>
+        </div>
+    </div>
+</div>
+
+---
+transition: slide-left
+layout: top-title
+color: dark
+---
+
+::title::
+<h1 style="font-size: 3rem; padding-top: 10px; padding-bottom: 10px; font-weight: bold; display: flex; justify-content: space-between;">
+   <span>模仿遊戲與圖靈測試 (Ⅱ)</span><span style="font-size: 2rem; color: gray;">後人的解釋</span>
+</h1>
+
+::content::
+<div style="margin-bottom: 10px;">
+    <div style="width: 100%; display: flex; align-items: center-top;">
+        <div style="flex: 3;">
+            <h2 style="line-height: 1.2;">模仿遊戲後續延伸出的概念被後人稱為圖靈測試， A 由電腦取代，B 則只限人類，C 一樣需要以書面訊息進行提問，並判斷 A 與 B 誰是電腦，誰是人類。</h2>
+            <h2 style="line-height: 1.2;">
+                圖靈測試被認為是人工智慧的最初定義，並且至今仍被廣泛使用於人工智慧的研究與發展中。 
+            </h2>
+            <div v-click=1 style="flex-grow: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; margin-top: 15px;">
+                <p style="margin: 0 0 10px 0; text-align: center;">延伸閱讀 電影《模仿遊戲》(The Imitation Game)：</p>
+                <div style="width: 100%; max-width: 560px; aspect-ratio: 16 / 9;">
+                    <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/spkUZQt_4pI?si=35gLPq1GhqTwy4yi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div style="flex: 1; text-align: center;">
+            圖靈測試進行方式圖解
+            <a href="https://commons.wikimedia.org/wiki/File:Turing_Test_Version_3.svg#/media/File:Turing_Test_Version_3.svg"><img style="background-color: #FFFFFF; width:auto; height: auto;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Turing_Test_Version_3.svg/1280px-Turing_Test_Version_3.svg.png" alt="Turing Test Version 3.svg"></a><br>By <a href="//commons.wikimedia.org/wiki/User:Hferee" title="User:Hferee">Hugo Férée</a> - <span class="int-own-work" lang="zh-tw">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=17059503">Link</a>
+        </div>
+    </div>
+</div>
