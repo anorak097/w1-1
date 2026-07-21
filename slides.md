@@ -87,7 +87,7 @@ color: dark
     <div style="width: 100%; display: flex; column-gap: 50px; align-items: center-top;">
         <div style="flex: 3;">
             <h2 style="font-size: 2.5rem;">WHY?</h2>
-            <h2>運作模式是在理解恩尼格碼結構與運作模式後，利用機器快速運算出所有可能性</h2>
+            <h2>運作模式是在理解恩尼格碼結構與運作模式後，利用機器快速運算出所有可能性，可理解成計算機。</h2>
             延伸閱讀 恩尼格碼的機械設計與運作原理：
             <ul style="margin: 0; padding-left: 20px; line-height: 1;">
                 <li style="line-height: 1 !important;">
@@ -273,14 +273,14 @@ color: dark
 
 ::title::
 <h1 style="font-size: 3rem; padding-top: 10px; padding-bottom: 10px; font-weight: bold; display: flex; justify-content: space-between;">
-   <span>AI 發展過程中遇到的質疑</span><span style="font-size: 2rem; color: gray;">中文房間實驗</span>
+   <span>AI 發展過程中遇到的質疑</span><span style="font-size: 2rem; color: gray;">中文房間論證 (Ⅰ)</span>
 </h1>
 
 ::content::
 <div style="width: 100%; display: flex; align-items: flex-start; box-sizing: border-box;">
     <div style="width: 66%; padding-right: 20px; display: flex; flex-direction: column; align-items: center; box-sizing: border-box;">
         <h2 style="width: 100%; text-align: left; margin-bottom: 10px;">
-            1980 年，哲學家<span style="background:#FFE45E; color:black;">約翰·希爾勒 (John Searle)</span> 提出<span style="background:#FFE45E; color:black;">「中文房間實驗」(Chinese Room Argument)</span>，認為人工智慧只能模擬人類的語言理解能力，並不能真正理解語言的意義。
+            1980 年，哲學家<span style="background:#FFE45E; color:black;">約翰·希爾勒 (John Searle)</span> 提出<span style="background:#FFE45E; color:black;">「中文房間論證」(Chinese Room Argument)</span>，認為人工智慧只能模擬人類的語言理解能力，並不能真正理解語言的意義。
         </h2>
         <a href="https://www.youtube.com/watch?v=oaOG1xOk7XY&t=107s" target="_blank" style="display: block; width: 75%; text-align: center;">
             <img src="https://preview.redd.it/fun-fact-the-chinese-room-is-a-famous-artificial-v0-hqrg8ha6bw6g1.png?width=1365&format=png&auto=webp&s=11f120b955fd1936622d8bac5a195d27ca87e190" style="width: 100%; height: auto; margin-top: 10px; margin-bottom: 10px;">
@@ -301,6 +301,11 @@ color: dark
     </div>
 </div>
 
+<!--
+中文房間實驗描述的是房間中有一名不懂中文的外國人與一堆能讓外國人理解中文的文獻，當門外的人使用寫了中文的紙條與外國人溝通時，外國人使用了文獻，依照中文的形狀從文獻中找出對應的回應，以紙條傳回中文回應。
+那麼，門外的人能知道裡面的外國人其實不懂中文嗎?
+-->
+
 ---
 transition: slide-left
 layout: top-title
@@ -309,8 +314,46 @@ color: dark
 
 ::title::
 <h1 style="font-size: 3rem; padding-top: 10px; padding-bottom: 10px; font-weight: bold; display: flex; justify-content: space-between;">
-   <span>AI 發展過程中遇到的質疑</span><span style="font-size: 2rem; color: gray;">ANI, AGI and ASI</span>
+   <span>AI 發展過程中遇到的質疑</span><span style="font-size: 2rem; color: gray;">中文房間論證 (Ⅱ)</span>
 </h1>
 
 ::content::
-next time
+<h2>
+    中文房間論證即是針對圖靈測試的質疑，當一個不懂中文人依靠文獻通過了中文對話的模仿遊戲，不懂中文的那人還是不懂。
+    <br>
+    換成電腦來說，即使電腦通過了圖靈測試，並不代表電腦擁有該方面的智慧，而有可能是外人寫好的邏輯、演算法足以使其運算出了最適合的回應。這代表其可能並不真正擁有處理該問題的「智慧」。
+</h2>
+<br>
+<Admonition title="Note" width="100%" v-click="1" icon="pixel:notebook" color=cyan-light>
+    <h2 style="font-size: 2rem;">Intelligence</h2>
+    <h2 style="font-size: 2rem;">智慧</h2>
+    <h2>the ability to learn, understand, and make judgments or have opinions that are based on reason. —— Cambridge Dictionary</h2>
+    <h2>學習、理解，並能有依據的進行判斷或選擇的能力</h2>
+</Admonition>
+
+---
+transition: slide-left
+layout: top-title
+color: dark
+---
+
+::title::
+<h1 style="font-size: 3rem; padding-top: 10px; padding-bottom: 10px; font-weight: bold; display: flex; justify-content: space-between;">
+   <span>AI 的發展過程</span>
+</h1>
+
+::content::
+<AITimeLine :activeIndex="6" />
+
+---
+transition: slide-left
+layout: top-title
+color: dark
+---
+
+::title::
+<h1 style="font-size: 3rem; padding-top: 10px; padding-bottom: 10px; font-weight: bold; display: flex; justify-content: space-between;">
+   <span>Deep Blue</span><span style="font-size: 2rem; color: gray;">創舉抑或是設局的廣告</span>
+</h1>
+
+::content::
