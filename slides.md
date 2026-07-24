@@ -321,7 +321,7 @@ color: dark
 <h2>
     中文房間論證即是針對圖靈測試的質疑，當一個不懂中文人依靠文獻通過了中文對話的模仿遊戲，不懂中文的那人還是不懂。
     <br>
-    換成電腦來說，即使電腦通過了圖靈測試，並不代表電腦擁有該方面的智慧，而有可能是外人寫好的邏輯、演算法足以使其運算出了最適合的回應。這代表其可能並不真正擁有處理該問題的「智慧」。
+    換成電腦來說，即使電腦通過了圖靈測試，可能也不代表電腦擁有該方面的智慧，而有是外人寫好的邏輯、演算法足以使其推算出了最適合的回應。這代表其可能並不真正擁有處理該問題的「智慧」。
 </h2>
 <br>
 <Admonition title="Note" width="100%" v-click="1" icon="pixel:notebook" color=cyan-light>
@@ -330,6 +330,21 @@ color: dark
     <h2>the ability to learn, understand, and make judgments or have opinions that are based on reason. —— Cambridge Dictionary</h2>
     <h2>學習、理解，並能有依據的進行判斷或選擇的能力</h2>
 </Admonition>
+
+
+---
+transition: slide-left
+layout: top-title
+color: dark
+---
+
+::title::
+<h1 style="font-size: 3rem; padding-top: 10px; padding-bottom: 10px; font-weight: bold; display: flex; justify-content: space-between;">
+   <span>專家系統與機器學習</span><span style="font-size: 2rem; color: gray;">AI 崛起的關鍵</span>
+</h1>
+
+::content::
+<h2>電腦要進行一件事進行判斷，需要一套針對該事的演算法，而各領域專家針對各事擬定出的專屬演算法就是專家系統，</h2>
 
 ---
 transition: slide-left
