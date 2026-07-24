@@ -319,9 +319,9 @@ color: dark
 
 ::content::
 <h2>
-    中文房間論證即是針對圖靈測試的質疑，當一個不懂中文人依靠文獻通過了中文對話的模仿遊戲，不懂中文的那人還是不懂。
+    中文房間論證即是<span style="background:#FFE45E; color:black;">針對圖靈測試的質疑</span>，當一個不懂中文人依靠文獻通過了中文對話的模仿遊戲，不懂中文的那人還是不懂。
     <br>
-    換成電腦來說，即使電腦通過了圖靈測試，可能也不代表電腦擁有該方面的智慧，而有是外人寫好的邏輯、演算法足以使其推算出了最適合的回應。這代表其可能並不真正擁有處理該問題的「智慧」。
+    換成電腦來說，即使電腦通過了圖靈測試，可能也不代表電腦擁有該方面的智慧，而有是外人寫好的<span style="background:#FFE45E; color:black;">邏輯、演算法</span>足以使其推算出了最適合的回應。這代表其可能並不真正擁有處理該問題的「智慧」。
 </h2>
 <br>
 <Admonition title="Note" width="100%" v-click="1" icon="pixel:notebook" color=cyan-light>
@@ -340,11 +340,40 @@ color: dark
 
 ::title::
 <h1 style="font-size: 3rem; padding-top: 10px; padding-bottom: 10px; font-weight: bold; display: flex; justify-content: space-between;">
-   <span>專家系統與機器學習</span><span style="font-size: 2rem; color: gray;">AI 崛起的關鍵</span>
+   <span>專家系統</span><span style="font-size: 2rem; color: gray;">AI 崛起的關鍵</span>
 </h1>
 
 ::content::
-<h2>電腦要進行一件事進行判斷，需要一套針對該事的演算法，而各領域專家針對各事擬定出的專屬演算法就是專家系統，</h2>
+<div style="width: 100%; display: flex; align-items: flex-start; box-sizing: border-box;">
+    <h2 style="width: 50%; padding-right: 20px; box-sizing: border-box;">電腦要進行一件事進行判斷，需要一套針對該事的演算法，而<span style="background:#FFE45E; color:black;">各領域專家針對各事項擬定出的專屬演算法</span>就是專家系統，但是，專家系統有著<span style="background:#FFE45E; color:black;">需要專人新增知識以及系統更新</span>的問題。</h2>
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/dullhunk/7214525854" title="Engineering flowchart 🔨 Does it Move? Should it? #WD40 vs. Duct Tape (original artist unknown)" style="display: flex; justify-content: left; align-items: center; height: 100%; width: 50%;">
+        <img src="https://live.staticflickr.com/8160/7214525854_733237dd83_z.jpg" alt="Engineering flowchart 🔨 Does it Move? Should it? #WD40 vs. Duct Tape (original artist unknown)" style="height: auto; width: auto; object-fit: contain; display: block;" />
+    </a>
+</div>
+---
+transition: slide-left
+layout: top-title
+color: dark
+---
+
+::title::
+<h1 style="font-size: 3rem; padding-top: 10px; padding-bottom: 10px; font-weight: bold; display: flex; justify-content: space-between;">
+   <span>機器學習與深度學習</span><span style="font-size: 2rem; color: gray;">AI 崛起的關鍵</span>
+</h1>
+
+::content::
+<h2>機器學習的出現解決了專家系統的缺點，<span style="background:#FFE45E; color:black;">給予機器處理過的資料進行學習</span>。<span v-click="2">後續又衍生出了<span style="background:#FFE45E; color:black;">模仿人類大腦運作模式</span>以讓機器<span style="background:#FFE45E; color:black;">自行處理資料並學習</span>的深度學習。</span></h2>
+<Admonition title="Note" width="100%" icon="pixel:notebook" color=cyan-light>
+    <h2 style="font-size: 2rem;">人工智慧 <span style="font-size: 1.5rem;">在機器中模擬或複製人類智慧。</span></h2>
+    <Admonition title="Note" width="auto" style="margin-left: 50px;" v-click="1" icon="pixel:notebook" color=blue-light>
+        <h2 style="font-size: 2rem;">機器學習 (Machine Learning)</h2>
+        <h2>讓機器從資料中學習，準確執行特定工作。</h2>
+        <Admonition title="Note" width="auto" style="margin-left: 50px;" v-click="2" icon="pixel:notebook" color=indigo-light>
+            <h2 style="font-size: 2rem;">深度學習 (Deep Learning)</h2>
+            <h2>自動從資料中學習特徵，藉此提高準確度並處理更複雜的模式 </h2>
+        </Admonition>
+    </Admonition>
+</Admonition>
 
 ---
 transition: slide-left
@@ -372,3 +401,148 @@ color: dark
 </h1>
 
 ::content::
+<div style="width: 100%; display: flex; align-items: flex-start; box-sizing: border-box;">
+    <div style="width: 66%; padding-right: 20px; box-sizing: border-box;">
+        <h2>
+            Deep Blue 是 <span style="background:#FFE45E; color:black;">IBM 打造的西洋棋電腦</span>，於 1997 年擊敗世界冠軍加里·卡斯帕羅夫 (Гарри Каспаров)，這是<span style="background:#FFE45E; color:black;">人工智慧發展史上重要的里程碑</span>，然而，Deep Blue 的勝利也引起了許多爭議與質疑。
+        </h2>
+        <br>
+        <h2>
+            實際上卡斯帕羅夫在 1996 年勝過 Deep Blue，並在 1997 年的比賽中，<span style="background:#FFE45E; color:black;">Deep Blue 的程式被重新設計與調整</span>，這使得卡斯帕羅夫認為 Deep Blue 的勝利是因為 IBM 的策略與調整，而非 Deep Blue 真正的能力。
+        </h2>
+    </div>
+    <div style="width: 33%; display: flex; flex-direction: column; align-items: center; text-align: center; box-sizing: border-box;">
+        深藍機組之一
+        <p>
+            <a href="https://commons.wikimedia.org/wiki/File:Deep_Blue.jpg#/media/File:Deep_Blue.jpg">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/be/Deep_Blue.jpg" alt="Deep Blue.jpg" style="display: block; width: 75%; max-width: 300px; margin: 0 auto;">
+            </a>
+            by <a rel="nofollow" class="external text" href="https://www.flickr.com/photos/jamesthephotographer/">James the photographer</a><br>
+            <a href="https://creativecommons.org/licenses/by/2.0" title="Creative Commons Attribution 2.0">CC BY 2.0</a>, 
+            <a href="https://commons.wikimedia.org/w/index.php?curid=3511068">Link</a>
+        </p>
+    </div>
+</div>
+
+---
+transition: slide-left
+layout: top-title
+color: dark
+---
+
+::title::
+<h1 style="font-size: 3rem; padding-top: 10px; padding-bottom: 10px; font-weight: bold; display: flex; justify-content: space-between;">
+   <span>AI 的發展過程</span>
+</h1>
+
+::content::
+<AITimeLine :activeIndex="7" />
+
+---
+transition: slide-left
+layout: top-title
+color: dark
+---
+
+::title::
+<h1 style="font-size: 3rem; padding-top: 10px; padding-bottom: 10px; font-weight: bold; display: flex; justify-content: space-between;">
+   <span>工業 4.0</span>
+</h1>
+
+::content::
+(物聯網 + AI + BigData)
+
+---
+transition: slide-left
+layout: top-title
+color: dark
+---
+
+::title::
+<h1 style="font-size: 3rem; padding-top: 10px; padding-bottom: 10px; font-weight: bold; display: flex; justify-content: space-between;">
+   <span>AI 的發展過程</span>
+</h1>
+
+::content::
+<AITimeLine :activeIndex="9" />
+
+---
+transition: slide-left
+layout: top-title
+color: dark
+---
+
+::title::
+<h1 style="font-size: 3rem; padding-top: 10px; padding-bottom: 10px; font-weight: bold; display: flex; justify-content: space-between;">
+   <span>聊天機器人</span>
+</h1>
+
+::content::
+(舉疾管家 提到 2020 講罐頭回覆) 
+
+---
+transition: slide-left
+layout: top-title
+color: dark
+---
+
+::title::
+<h1 style="font-size: 3rem; padding-top: 10px; padding-bottom: 10px; font-weight: bold; display: flex; justify-content: space-between;">
+   <span>ChatGPT</span>
+</h1>
+
+::content::
+(講近代 AI 崛起 LLM 與 NLP/NLG)
+
+---
+transition: slide-left
+layout: top-title
+color: dark
+---
+
+::title::
+<h1 style="font-size: 3rem; padding-top: 10px; padding-bottom: 10px; font-weight: bold; display: flex; justify-content: space-between;">
+   <span>聊天機器人 2.0</span>
+</h1>
+
+::content::
+(講木子米?)
+
+---
+transition: slide-left
+layout: top-title
+color: dark
+---
+
+::title::
+<h1 style="font-size: 3rem; padding-top: 10px; padding-bottom: 10px; font-weight: bold; display: flex; justify-content: space-between;">
+   <span>生成式 AI 與生活</span>
+</h1>
+
+::content::
+(各領域(繪圖 音樂 程式)應用)
+
+---
+transition: slide-left
+layout: top-title
+color: dark
+---
+
+::title::
+<h1 style="font-size: 3rem; padding-top: 10px; padding-bottom: 10px; font-weight: bold; display: flex; justify-content: space-between;">
+   <span>本學期內容</span>
+</h1>
+
+::content::
+結合工業 4.0 核心概念 (物聯網 + AI + BigData) 中的物聯網及 AI
+<br>
+<br>
+物聯網用 arduino 講感測器如何取得資料、中間的程式概念以及執行器如何將指令執行
+<br>
+<br>
+AI 主要講機器學習，用 Teachable machine (講圖片分類及動作辨識)
+<br>
+<br>
+最終 project 提供一組範例程式 (Teachable machine 離線 model + Python (讀攝影機進 model → 輸出指令到 Serial 給 Arduino) + Arduino 亮燈)
+<br>
+開放他們以生成式 AI 進行改寫 做出不同的執行器組合(或融入更多感測器) (要提出情境)
