@@ -436,7 +436,7 @@ color: dark
 </h1>
 
 ::content::
-<AITimeLine :activeIndex="7" />
+<AITimeLine :activeIndex="8" />
 
 ---
 transition: slide-left
@@ -446,11 +446,24 @@ color: dark
 
 ::title::
 <h1 style="font-size: 3rem; padding-top: 10px; padding-bottom: 10px; font-weight: bold; display: flex; justify-content: space-between;">
-   <span>工業 4.0</span>
+   <span>聊天機器人</span><span style="font-size: 2rem; color: gray;">規則式 AI 的例子</span>
 </h1>
 
 ::content::
-(物聯網 + AI + BigData)
+<div style="width: 100%; display: flex; align-items: flex-start; box-sizing: border-box;">
+    <h2>
+        隨著通訊軟體演進，多數商家與機關會選擇引入聊天機器人處理部分過往需要客服人員依靠電話或是線上回覆的問題。
+        <br>
+        以 LINE 聊天機器人為例，會設定所謂的罐頭回覆，使用者透過點擊互動選項會送出特定訊息，聊天機器人會回應已經設定好的回覆訊息。
+        <br>
+        <br>
+        <Admonition title="Note" width="auto" style="margin-left: 50px; margin-right: 50px;" v-click="1" icon="pixel:notebook" color=cyan-light>
+            <h2 style="font-size: 2rem;">規則式 AI (Rule-based AI)</h2>
+            <h2>if (特定條件) then (特定訊息)</h2>
+        </Admonition>
+    </h2>
+    <img src='./1BvpeZOSWyiJdX-kr-2X-33JF5_d2sRIahGS9eO7KXwk.gif' width=25%>
+</div>
 
 ---
 transition: slide-left
@@ -460,39 +473,14 @@ color: dark
 
 ::title::
 <h1 style="font-size: 3rem; padding-top: 10px; padding-bottom: 10px; font-weight: bold; display: flex; justify-content: space-between;">
-   <span>AI 的發展過程</span>
+   <span>ChatGPT</span><span style="font-size: 2rem; color: gray;">LLM 崛起</span>
 </h1>
 
 ::content::
-<AITimeLine :activeIndex="9" />
-
----
-transition: slide-left
-layout: top-title
-color: dark
----
-
-::title::
-<h1 style="font-size: 3rem; padding-top: 10px; padding-bottom: 10px; font-weight: bold; display: flex; justify-content: space-between;">
-   <span>聊天機器人</span>
-</h1>
-
-::content::
-(舉疾管家 提到 2020 講罐頭回覆) 
-
----
-transition: slide-left
-layout: top-title
-color: dark
----
-
-::title::
-<h1 style="font-size: 3rem; padding-top: 10px; padding-bottom: 10px; font-weight: bold; display: flex; justify-content: space-between;">
-   <span>ChatGPT</span>
-</h1>
-
-::content::
-(講近代 AI 崛起 LLM 與 NLP/NLG)
+<h2>
+    2022 年 Open AI 推出了 ChatGPT 正式將 AI 帶入大眾視角，後續多家公司也陸續推出自家的 AI
+</h2>
+<iconify-color selfhst--chatgpt></iconify-color>
 
 ---
 transition: slide-left
@@ -546,3 +534,48 @@ AI 主要講機器學習，用 Teachable machine (講圖片分類及動作辨識
 最終 project 提供一組範例程式 (Teachable machine 離線 model + Python (讀攝影機進 model → 輸出指令到 Serial 給 Arduino) + Arduino 亮燈)
 <br>
 開放他們以生成式 AI 進行改寫 做出不同的執行器組合(或融入更多感測器) (要提出情境)
+
+---
+transition: slide-left
+layout: top-title
+color: dark
+---
+
+::title::
+<h1 style="font-size: 3rem; padding-top: 10px; padding-bottom: 10px; font-weight: bold; display: flex; justify-content: space-between;">
+   <span>工業 4.0</span><span style="font-size: 2rem; color: gray;">第四次工業革命</span>
+</h1>
+
+::content::
+<div style="width: 100%; display: flex; align-items: flex-start; box-sizing: border-box;">
+    <Admonition title="Note" width="25%" icon="pixel:notebook" color=indigo-light>
+        <h2 style="font-size: 2rem;">
+            第一次<br>工業革命
+        </h2>
+        <h2 style="font-size: 1.5rem;">機械化</h2>
+    </Admonition>
+    <Admonition title="Note" width="25%" icon="pixel:notebook" color=indigo-light>
+        <h2 style="font-size: 2rem;">
+            第二次<br>工業革命
+        </h2>
+        <h2 style="font-size: 1.5rem;">電氣化</h2>
+    </Admonition>
+    <Admonition title="Note" width="25%" icon="pixel:notebook" color=indigo-light>
+        <h2 style="font-size: 2rem;">
+            第三次<br>工業革命
+        </h2>
+        <h2 style="font-size: 1.5rem;">資訊化</h2>
+    </Admonition>
+    <Admonition title="Note" width="25%" icon="pixel:notebook" color=indigo-light>
+        <h2 style="font-size: 2rem;">
+            第四次<br>工業革命
+        </h2>
+        <h2 style="font-size: 1.5rem;">虛實整合</h2>
+    </Admonition>
+</div>
+<h2 style="font-size: 2rem;">
+    第四次工業革命
+</h2>
+<h2 style="font-size: 1.5rem;">
+    物聯網 (IoT)、人工智慧 (AI)、大數據 (Big Data)、雲端運算 (Cloud Computing)
+</h2>

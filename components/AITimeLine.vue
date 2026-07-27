@@ -66,20 +66,12 @@ const timelineItems = ref<TimelineItem[]>([
         order: 6
     },
     {
-        date: '2010 ~',
-        title: 'Now',
-        description: '工業 4.0 與人工智慧的應用',
-        icon: 'i-lucide-bot',
-        position: 'top',
-        order: 7
-    },
-    {
         date: '2016',
         title: 'Line & Discord bot',
         description: '聊天機器人與自動化普及',
         icon: 'i-lucide-message-square',
         position: 'bottom',
-        order: 8
+        order: 7
     },
     {
         date: '2022',
@@ -87,7 +79,7 @@ const timelineItems = ref<TimelineItem[]>([
         description: '生成式 AI 的全面爆發',
         icon: 'i-lucide-sparkles',
         position: 'bottom',
-        order: 9
+        order: 8
     }
 ])
 </script>
@@ -96,7 +88,7 @@ const timelineItems = ref<TimelineItem[]>([
     <div class="w-full relative p-4 min-h-[460px] flex flex-col justify-center select-none">
         <div class="absolute left-4 right-4 h-[2px] bg-gray-200 dark:bg-stone-700 top-1/2 -translate-y-1/2 z-0"></div>
 
-        <div class="w-full grid grid-cols-9 gap-4 relative z-10 grid-rows-2">
+        <div class="w-full grid grid-cols-8 gap-4 relative z-10 grid-rows-2">
             <div 
                 v-for="item in timelineItems" 
                 :key="item.date" 
