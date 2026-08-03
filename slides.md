@@ -1,5 +1,6 @@
 ---
 theme: neversink
+routerMode: hash
 title: \#1 Overview
 class: text-center
 transition: slide-left
