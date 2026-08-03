@@ -350,10 +350,12 @@ color: dark
         <img src="https://live.staticflickr.com/8160/7214525854_733237dd83_z.jpg" alt="Engineering flowchart 🔨 Does it Move? Should it? #WD40 vs. Duct Tape (original artist unknown)" style="height: auto; width: auto; object-fit: contain; display: block;" />
     </a>
 </div>
+
 ---
 transition: slide-left
 layout: top-title
 color: dark
+routeAlias: ML
 ---
 
 ::title::
@@ -452,9 +454,9 @@ color: dark
 ::content::
 <div style="width: 100%; display: flex; align-items: flex-start; box-sizing: border-box;">
     <h2>
-        隨著通訊軟體演進，多數商家與機關會選擇引入聊天機器人處理部分過往需要客服人員依靠電話或是線上回覆的問題。
+        隨著通訊軟體演進，多數商家與機關會選擇引入<span style="background:#FFE45E; color:black;">聊天機器人</span>處理部分過往需要客服人員依靠電話或是線上回覆的問題。
         <br>
-        以 LINE 聊天機器人為例，會設定所謂的罐頭回覆，使用者透過點擊互動選項會送出特定訊息，聊天機器人會回應已經設定好的回覆訊息。
+        以 LINE 聊天機器人為例，會設定所謂的<span style="background:#FFE45E; color:black;">罐頭回覆</span>，使用者透過點擊互動選項會送出<span style="background:#FFE45E; color:black;">特定訊息</span>，聊天機器人會回應<span style="background:#FFE45E; color:black;">已經設定好的回覆訊息</span>，這也是一種 AI。
         <br>
         <br>
         <Admonition title="Note" width="auto" style="margin-left: 50px; margin-right: 50px;" v-click="1" icon="pixel:notebook" color=cyan-light>
@@ -473,16 +475,133 @@ color: dark
 
 ::title::
 <h1 style="font-size: 3rem; padding-top: 10px; padding-bottom: 10px; font-weight: bold; display: flex; justify-content: space-between;">
-   <span>ChatGPT</span><span style="font-size: 2rem; color: gray;">LLM 崛起</span>
+   <span>ChatGPT</span><span style="font-size: 2rem; color: gray;">LLM 使 AI 普及化</span>
 </h1>
 
 ::content::
-<h2>
-    2022 年 Open AI 推出了 ChatGPT 正式將 AI 帶入大眾視角，後續多家公司也陸續推出自家的 AI
-</h2>
-<iconify-color selfhst--chatgpt></iconify-color>
+<div style="width: 100%; display: flex; align-items: flex-start; box-sizing: border-box;">
+    <div style="width: 66%; padding-right: 20px; box-sizing: border-box;">
+        <h2>
+            2022 年 Open AI 正式推出了使用 <span style="background:#FFE45E; color:black;">GPT-3(Generative Pre-trained Transformer 3)</span> 的 ChatGPT 正式將 AI 帶入一般用戶視野，後續多家公司也陸續推出自家的 AI。
+            <br>
+            背後的推手便是<span style="background:#FFE45E; color:black;">大型語言模型 (Large Language Model, LLM)</span> 的出現。大型語言模型中最重要的技術：<span style="background:#FFE45E; color:black;">自然語言處理 (Natural Language Processing, NLP)</span>，也就是 AI 能讀懂口語化指令的關鍵，現今也被廣泛用在許多 AI 應用中。
+        </h2>
+    </div>
+    <div class="bg-gray-50/20 rounded-lg p-4" style="width: 33%; box-sizing: border-box;">
+        <a href="https://chatgpt.com/" target="_blank" class="flex justify-center pb-2.5 w-full">
+            <logos-openai class="text-5xl"/>
+        </a>
+        <a href="https://claude.ai/" target="_blank" class="flex justify-center pb-2.5 w-full">
+            <logos-claude class="text-5xl"/>
+        </a>
+        <a href="https://gemini.google.com/" target="_blank" class="flex justify-center pb-2.5 w-full">
+            <logos-google-gemini class="text-5xl"/>
+        </a>
+        <a href="https://github.com/copilot" target="_blank" class="flex justify-center pb-2.5 w-full">
+            <logos-github-copilot class="text-5xl"/>
+        </a>
+        <a href="https://grok.com/" target="_blank" class="flex justify-center pb-2.5 w-full">
+            <logos-grok class="text-5xl"/>
+        </a>
+    </div>
+</div>
 
 ---
+transition: slide-left
+layout: top-title
+color: dark
+---
+
+::title::
+<h1 style="font-size: 3rem; padding-top: 10px; padding-bottom: 10px; font-weight: bold; display: flex; justify-content: space-between;">
+   <span>被 LLM 帶動的生成式 AI</span><span style="font-size: 2rem; color: gray;">以繪圖 AI 為例</span>
+</h1>
+
+::content::
+<div style="width: 100%; display: flex; align-items: flex-start; box-sizing: border-box;">
+    <div style="width: 66%; padding-right: 20px; box-sizing: border-box;">
+        <h2>
+            2021 年，GPT-3 發布的隔年，OpenAI 發布了能<span style="background:#FFE45E; color:black;">將文字敘述轉成影像的 DALL·E</span>，這是第一個能將文字敘述轉成影像的 AI，後續也有許多公司推出自家的繪圖 AI。
+            <br>
+            如 <a href="https://colab.research.google.com/github/alembics/disco-diffusion/blob/main/Disco_Diffusion.ipynb" target="_blank">Disco Diffusion</a>、<a href="https://stablediffusionweb.com/zh-tw" target="_blank">Stable Diffusion</a>、<a href="https://www.midjourney.com/" target="_blank">Midjourney</a>、<a href="https://firefly.adobe.com/" target="_blank">Adobe Firefly</a>、<a href="https://runwayml.com/" target="_blank">Runway</a>、<a href="https://blogs.nvidia.com.tw/blog/ai-decoded-gan-canvas-app/" target="_blank">NVIDIA Canvas</a> 等等，現在這些繪圖 AI 也被廣泛應用在製作文宣等用途。
+            <br>
+            <!-- 不過也有部分爭議，如 AI 訓練過程中使用的圖片可能是有版權的，或是 AI 生成的圖片是否為自己的作品，這些都是目前社會上對於繪圖 AI 的爭議。 -->
+            <br>
+            <div v-click="1">
+                延伸閱讀  AI 繪圖爭議事件：
+                <ul style="margin: 0; padding-left: 20px; line-height: 0.5 !important;">
+                    <li style="line-height: 1 !important;">
+                        吳淡如電腦繪圖事件
+                    </li>
+                    <li style="line-height: 0.5 !important;">
+                        復興商工 AI 作品得獎爭議
+                    </li>
+                </ul>
+            </div>
+        </h2>
+    </div>
+    <div style="width: 33%; box-sizing: border-box; text-align: center;">
+        <div style="width: 100%; height: 350px; overflow: hidden; border-radius: 8px;">
+            <img src="./TimeToDisco(0)_0.png" 
+                 style="width: 100%; height: 100%; object-fit: cover; object-position: center 30%; display: block;" 
+                 alt="Disco Diffusion 示範圖"/>
+        </div>
+        2022/5/23 由 Disco Diffusion 生成<br>prompt: "cyberpunk city at night"
+    </div>
+</div>
+
+---
+transition: slide-left
+layout: top-title
+color: dark
+---
+
+::title::
+<h1 style="font-size: 3rem; padding-top: 10px; padding-bottom: 10px; font-weight: bold; display: flex; justify-content: space-between;">
+   <span>延伸閱讀：生成式 AI</span><span style="font-size: 2rem; color: gray;">COMPUTEX 2023</span>
+</h1>
+
+::content::
+<v-switch>
+    <template #0>
+        <div style="width: 100%; display: flex; align-items: flex-start; box-sizing: border-box;">
+            <div style="width: 75%; padding-right: 20px; box-sizing: border-box; text-align: center;">
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/i-wpzS9ZsCs?si=tp5EUX5stWUY-bl-&amp;start=2455" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                NVIDIA Keynote at COMPUTEX 2023
+            </div>
+            <h2 style="width: 25%; padding-right: 20px; box-sizing: border-box;">
+                <span style="background:#FFE45E; color:black;">電腦運算能力提升</span>使得 ChatGPT 崛起，
+                大型語言模型的發展，特別是<span style="background:#FFE45E; color:black;">Transformer 架構</span> (GPT 的 T) 的出現，使得生成式 AI 的應用更加廣泛。
+            </h2>
+        </div>
+    </template>
+    <template #1>
+        <div style="width: 100%; display: flex; align-items: flex-start; box-sizing: border-box;">
+            <div style="width: 75%; padding-right: 20px; box-sizing: border-box; text-align: center;">
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/i-wpzS9ZsCs?si=Ou2WStDUEP2DiDLf&amp;start=2575&amp;enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                NVIDIA Keynote at COMPUTEX 2023
+            </div>
+            <h2 style="width: 25%; padding-right: 20px; box-sizing: border-box;">
+                有 Transformer 架構的<span style="background:#FFE45E; color:black;">自然語言處理能力</span>，能夠讓 AI 有更多學習資源與產出類型，甚至是多模態的輸入在現今已經可行。
+            </h2>
+        </div>
+    </template>
+    <template #2>
+        <div style="width: 100%; display: flex; align-items: flex-start; box-sizing: border-box;">
+            <div style="width: 75%; padding-right: 20px; box-sizing: border-box; text-align: center;">
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/i-wpzS9ZsCs?si=aqjxwnZoAQJgLc1w&amp;start=2762" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                NVIDIA Keynote at COMPUTEX 2023
+            </div>
+            <h2 style="width: 25%; padding-right: 20px; box-sizing: border-box;">
+                依照提示詞生成旋律並跟著歌唱的範例。
+            </h2>
+        </div>
+    </template>
+</v-switch>
+
+
+
+<!-- ---
 transition: slide-left
 layout: top-title
 color: dark
@@ -508,7 +627,7 @@ color: dark
 </h1>
 
 ::content::
-(各領域(繪圖 音樂 程式)應用)
+(各領域(繪圖 音樂 程式)應用) -->
 
 ---
 transition: slide-left
@@ -522,20 +641,29 @@ color: dark
 </h1>
 
 ::content::
-結合工業 4.0 核心概念 (物聯網 + AI + BigData) 中的物聯網及 AI
-<br>
-<br>
-物聯網用 arduino 講感測器如何取得資料、中間的程式概念以及執行器如何將指令執行
-<br>
-<br>
-AI 主要講機器學習，用 Teachable machine (講圖片分類及動作辨識)
-<br>
-<br>
-最終 project 提供一組範例程式 (Teachable machine 離線 model + Python (讀攝影機進 model → 輸出指令到 Serial 給 Arduino) + Arduino 亮燈)
-<br>
-開放他們以生成式 AI 進行改寫 做出不同的執行器組合(或融入更多感測器) (要提出情境)
+<div style="width: 100%; display: flex; align-items: flex-start; box-sizing: border-box;">
+    <div style="width: 50%; padding-right: 20px; box-sizing: border-box;">
+        <h2>結合機器學習與基礎硬體，介紹並打造小型邊緣人工智慧 (Edge AI) 專案。</h2>
+        <h2 v-click="1">使用 Teachable Machine 製作簡單的影像辨識模型，於電腦運行並透過序列埠控制 Arduino。
+        <br>
+        所需使用到的工具：<br>
+        Web Cam、
+        電腦(有python環境)、
+        Arduino
+        <br>
+        使用到的軟體：<br>
+        Arduino IDE
+        </h2>
+    </div>
+    <div style="width: 50%; padding-right: 20px; box-sizing: border-box; text-align: center;">
+        <h1>DEMO 影片製作中</h1>
+        <!-- 辨識物品 七段顯示價格 -->
+    </div>
+</div>
 
----
+
+
+<!-- ---
 transition: slide-left
 layout: top-title
 color: dark
@@ -578,4 +706,4 @@ color: dark
 </h2>
 <h2 style="font-size: 1.5rem;">
     物聯網 (IoT)、人工智慧 (AI)、大數據 (Big Data)、雲端運算 (Cloud Computing)
-</h2>
+</h2> -->
