@@ -464,7 +464,7 @@ color: dark
             <h2>if (特定條件) then (特定訊息)</h2>
         </Admonition>
     </h2>
-    <img src='./1BvpeZOSWyiJdX-kr-2X-33JF5_d2sRIahGS9eO7KXwk.gif' width=25%>
+    <img src='/1BvpeZOSWyiJdX-kr-2X-33JF5_d2sRIahGS9eO7KXwk.gif' width=25%>
 </div>
 
 ---
@@ -542,7 +542,7 @@ color: dark
     </div>
     <div style="width: 33%; box-sizing: border-box; text-align: center;">
         <div style="width: 100%; height: 350px; overflow: hidden; border-radius: 8px;">
-            <img src="./TimeToDisco(0)_0.png" 
+            <img src="/TimeToDisco(0)_0.png" 
                  style="width: 100%; height: 100%; object-fit: cover; object-position: center 30%; display: block;" 
                  alt="Disco Diffusion 示範圖"/>
         </div>
